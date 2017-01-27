@@ -1,0 +1,8 @@
+machine:
+  environment:
+    GO_ENV: "test"
+  
+test:
+  override:
+    - mkdir -p ./public/assets  
+    - go test -v -race ./...
